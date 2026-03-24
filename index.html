@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEER – Navbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" id="navbar">
+
+      <a href="#" class="logo">Tecygig</a>
+
+      <ul class="nav-menu" id="navMenu">
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">Index <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">Home Classic</a>
+            <a href="#">Home Modern</a>
+            <a href="#">Home Luxury</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">Properties <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">Property List</a>
+            <a href="#">Property Grid</a>
+            <a href="#">Property Map</a>
+            <a href="#">Property Detail</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">Agents <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">Agent List</a>
+            <a href="#">Agent Profile</a>
+            <a href="#">Join as Agent</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">Pages <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">About Us</a>
+            <a href="#">How It Works</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">Blog <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">Blog Grid</a>
+            <a href="#">Blog List</a>
+            <a href="#">Single Post</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown-parent">
+          <a class="nav-link" href="#">My Account <svg class="chevron" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Dashboard</a>
+            <a href="#">My Listings</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="#" class="cta-btn">
+        <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="7" y1="1" x2="7" y2="13" />
+          <line x1="1" y1="7" x2="13" y2="7" />
+        </svg>
+        Take a Tour
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="logo">NEER</span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="drawer-body">
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">Index <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">Home Classic</a><a href="#">Home Modern</a><a href="#">Home Luxury</a>
+        </div>
+      </div>
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">Properties <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">Property List</a><a href="#">Property Grid</a><a href="#">Property Map</a><a href="#">Property
+            Detail</a>
+        </div>
+      </div>
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">Agents <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">Agent List</a><a href="#">Agent Profile</a><a href="#">Join as Agent</a>
+        </div>
+      </div>
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">Pages <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">About Us</a><a href="#">How It Works</a><a href="#">Pricing</a><a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">Blog <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">Blog Grid</a><a href="#">Blog List</a><a href="#">Single Post</a>
+        </div>
+      </div>
+
+      <div class="drawer-item">
+        <button class="drawer-toggle">My Account <svg class="chevron" viewBox="0 0 10 6">
+            <path d="M1 1l4 4 4-4" />
+          </svg></button>
+        <div class="drawer-dropdown">
+          <a href="#">Login</a><a href="#">Register</a><a href="#">Dashboard</a>
+        </div>
+      </div>
+
+      <a href="#" class="cta-btn drawer-cta">
+        <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="7" y1="1" x2="7" y2="13" />
+          <line x1="1" y1="7" x2="13" y2="7" />
+        </svg>
+        Submit Property
+      </a>
+    </div>
+  </aside>
+
+
+  <section class="hero-section">
+    <div class="slider-container">
+
+      <div class="slide active">
+        <img
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          alt="Luxury Home">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Find Your Dream Property</h1>
+          <p>Discover premium real estate tailored to your lifestyle.</p>
+          <button class="cta-btn">Explore Properties</button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          alt="Modern Architecture">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Modern Living Spaces</h1>
+          <p>Connect with top agents to secure your future home.</p>
+          <button class="cta-btn">Meet Our Agents</button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="/assets/dillon-kydd-2keCPb73aQY-unsplash (1).jpg" alt="City Apartments">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Invest in Your Future</h1>
+          <p>Exclusive listings in the most sought-after neighborhoods.</p>
+          <button class="cta-btn">View Listings</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+    <div class="slider-dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
