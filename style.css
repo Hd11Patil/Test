@@ -498,8 +498,6 @@ ul {
   }
 }
 
-/* 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
-
 /* ─── HERO SLIDER CSS ─── */
 .hero-section {
   position: relative;
@@ -643,4 +641,149 @@ ul {
 .dot.active {
   background: var(--accent);
   transform: scale(1.2);
+}
+
+/* ─── PROPERTIES SECTION CSS ─── */
+.properties-section {
+  padding: 80px 5%;
+  background: #0d1117; /* Blends with your body background */
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  color: var(--text);
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* ─── CSS GRID FOR CARDS ─── */
+.properties-grid {
+  display: grid;
+  /* This automatically adjusts columns based on screen size */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ─── PROPERTY CARD STYLING ─── */
+.property-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Slight zoom effect on the image when hovering the card */
+.property-card:hover .card-image img {
+  transform: scale(1.08);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.badge.rent {
+  background: #2563eb; /* Blue for rent, to contrast the red */
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content .price {
+  color: var(--accent);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.card-content .price span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.card-content h3 {
+  color: var(--text);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.address {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.address svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.property-features {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+  margin-bottom: 25px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Modifying your existing CTA button to span the whole card width */
+.cta-btn.full-width {
+  width: 100%;
+  justify-content: center;
 }
